@@ -169,7 +169,7 @@ namespace DLLHijacker
     inline BOOL WINAPI Load()
     {
         TCHAR tzPath[MAX_PATH];
-        lstrcpy(tzPath, TEXT("winmmbase.dll"));
+        lstrcpy(tzPath, TEXT("winmmbase.dll"));  //劫持的原dll的名字
         m_hModule = LoadLibrary(tzPath);
         if (m_hModule == NULL)
             return FALSE;
@@ -200,7 +200,7 @@ namespace DLLHijacker
 using namespace DLLHijacker;
 VOID Hijack()
 {
-    MessageBoxW(NULL, L"DLL Hijack! by DLLHijacker", L":)", 0);
+    MessageBoxW(NULL, L"DLL Hijack! by DLLHijacker", L":)", 0); //信息框
 }
 BOOL WINAPI DllMain(HMODULE hModule, DWORD dwReason, PVOID pvReserved)
 {
