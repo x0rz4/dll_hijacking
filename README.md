@@ -35,7 +35,9 @@ First, we need to find the normal dll called by the program, and the DLL file wi
 
 reference：
 https://github.com/zhaoed/DLL_Hijacker
+
 https://github.com/CaledoniaProject/DLL_Hijacker_Rewritten
+
 https://pentestlab.blog/2017/03/27/dll-hijacking/
 
 
