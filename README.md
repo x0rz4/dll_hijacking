@@ -1,5 +1,6 @@
 #dll hijacking bypassuac
 ###0x00 Dll hijacking？
+
 Hijack DLL,Need to understand the flow of DLL in Windows
 In Windows environments when an application or a service is starting it looks for a number of DLL’s in order to function properly. If these DLL’s doesn’t exist or are implemented in an insecure way (DLL’s are called without using a fully qualified path) then it is possible to escalate privileges by forcing the application to load and execute a malicious DLL file.
 
